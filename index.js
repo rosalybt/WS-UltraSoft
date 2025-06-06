@@ -1,9 +1,9 @@
-import express from 'express';
-import { Client, LocalAuth, MessageMedia } from 'whatsapp-web.js';
-import qrcode from 'qrcode';
-import fs from 'fs';
-import axios from 'axios';
-import bodyParser from 'body-parser';
+const express = require('express');
+const { Client, LocalAuth, MessageMedia } = require('whatsapp-web.js');
+const qrcode = require('qrcode');
+const fs = require('fs');
+const axios = require('axios');
+const bodyParser = require('body-parser');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
