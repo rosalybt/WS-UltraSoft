@@ -10,6 +10,9 @@ const PORT = process.env.PORT || 3000;
 app.use(bodyParser.json());
 
 const clients = {};
+app.get('/', (req, res) => {
+  res.send('Servidor WhatsApp activo ✅');
+});
 
 function initClient(sessionId) {
     if (clients[sessionId]) return clients[sessionId];
